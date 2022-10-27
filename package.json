@@ -10,7 +10,9 @@
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook",
     "prepare": "npx react-native-builder-bob@latest build",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint",
+    "format": "prettier *.{js,tsx} -w"
   },
   "dependencies": {
     "@types/react": "~18.0.0",
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@react-native-community/eslint-config": "^3.1.0",
     "@storybook/addon-actions": "^5.3.21",
     "@storybook/addon-knobs": "^5.3.21",
     "@storybook/addon-links": "^5.3.21",
@@ -34,6 +37,8 @@
     "@storybook/react-native-server": "^5.3.23",
     "@types/jest": "^29.2.0",
     "babel-loader": "^8.2.5",
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1",
     "react-dom": "^18.0.0",
     "react-native-builder-bob": "^0.20.0"
   },
@@ -65,5 +70,8 @@
     "transformIgnorePatterns": [
       "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
     ]
+  },
+  "eslintConfig": {
+    "extends": "@react-native-community"
   }
 }
