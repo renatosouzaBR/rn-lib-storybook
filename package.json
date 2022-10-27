@@ -2,6 +2,7 @@
   "name": "rn-lib-storybook",
   "version": "1.1.0",
   "main": "node_modules/expo/AppEntry.js",
+  "repository": "https://github.com/renatosouzaBR/rn-lib-storybook",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -13,7 +14,8 @@
     "test": "jest",
     "lint": "eslint",
     "format": "prettier *.{js,tsx} -w",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@types/react": "~18.0.0",
@@ -46,7 +48,8 @@
     "jest-expo": "^46.0.1",
     "prettier": "^2.7.1",
     "react-dom": "^18.0.0",
-    "react-native-builder-bob": "^0.20.0"
+    "react-native-builder-bob": "^0.20.0",
+    "semantic-release": "^19.0.5"
   },
   "react-native": "src/index.ts",
   "module": "lib/module/index.js",
