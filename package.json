@@ -74,6 +74,11 @@
     "node_modules/",
     "lib/"
   ],
+  "command": {
+    "publish": {
+      "conventionalCommits": true
+    }
+  },
   "jest": {
     "preset": "jest-expo",
     "transformIgnorePatterns": [
@@ -97,5 +102,10 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "release": {
+    "branches": [
+      "master"
+    ]
   }
 }
