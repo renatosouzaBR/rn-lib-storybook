@@ -12,15 +12,14 @@
     "prepare": "npx react-native-builder-bob@latest build",
     "test": "jest",
     "lint": "eslint",
-    "format": "prettier *.{js,tsx} -w"
+    "format": "prettier *.{js,tsx} -w",
+    "commit": "git-cz"
   },
   "dependencies": {
     "@types/react": "~18.0.0",
     "@types/react-native": "~0.69.1",
     "expo": "~46.0.16",
     "expo-status-bar": "~1.4.0",
-    "jest": "^26.6.3",
-    "jest-expo": "^46.0.1",
     "react": "18.0.0",
     "react-native": "0.69.6",
     "typescript": "^4.6.3"
@@ -37,7 +36,11 @@
     "@storybook/react-native-server": "^5.3.23",
     "@types/jest": "^29.2.0",
     "babel-loader": "^8.2.5",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.26.0",
+    "jest": "^26.6.3",
+    "jest-expo": "^46.0.1",
     "prettier": "^2.7.1",
     "react-dom": "^18.0.0",
     "react-native-builder-bob": "^0.20.0"
@@ -73,5 +76,10 @@
   },
   "eslintConfig": {
     "extends": "@react-native-community"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
