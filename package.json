@@ -33,7 +33,6 @@
     "react-dom": "^18.0.0",
     "react-native-builder-bob": "^0.20.0"
   },
-  "private": true,
   "react-native": "src/index.ts",
   "module": "lib/module/index.js",
   "types": "lib/typescript/src/index.d.ts",
