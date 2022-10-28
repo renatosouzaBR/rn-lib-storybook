@@ -50,4 +50,3 @@ jobs:
         run: npm run semantic-release
         env:
           CI: true
-          GH_TOKEN: ${{ secrets.TOKEN_CI }}
